@@ -60,9 +60,9 @@ For further optimization, **BayesSearchCV** was used for hyperparameter tuning. 
 - **Testing Accuracy**: 87.9%
 - **F1 Score**: 70.59%
 
-- ![Results](https://github.com/MazenMahmoud-IEEE/Heart_Disease_Detection/blob/main/results.png)
+ ![Results](https://github.com/MazenMahmoud-IEEE/Heart_Disease_Detection/blob/main/results.png)
 
-Despite the strong overall performance, the model had a **10% false negative rate**, which is concerning due to the limited data available for individuals with heart disease. However, given the original class imbalance (10:1 ratio of majority to minority), this result is acceptable.
+- Despite the strong overall performance, the model had a **10% false negative rate**, which is concerning due to the limited data available for individuals with heart disease. However, given the original class imbalance (10:1 ratio of majority to minority), this result is acceptable.
 
 Key insights from the results:
 - The model performed well on **unseen data**, even after dropping 30% of the majority class (individuals without heart disease), demonstrating that the model's efficiency was not compromised by the data reduction.
