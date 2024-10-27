@@ -9,7 +9,7 @@ with open(model_path, 'rb') as file:
 
 # Define the app layout
 st.title("Heart Disease Prediction")
-st.write("Enter the patient's data")
+st.write("Enter the patient's data in the sidebar")
 
 # Age input and mapping to age categories
 age = st.sidebar.number_input("Enter Age", min_value=0, max_value=120, value=40)
