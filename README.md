@@ -1,17 +1,30 @@
-# Heart Disease Detection Project
+# Heart Disease Test App
 
 ## Project Overview
 This project aims to predict heart disease occurrence based on multiple health-related features. Using machine learning models, the project addresses the challenge of class imbalance and ensures accurate prediction of heart disease risks. The dataset includes various demographic, behavioral, and medical attributes for individuals, such as BMI, Smoking, Alcohol Drinking, Physical Health, and more.
 
 The focus is on using data preprocessing techniques and machine learning algorithms to classify whether an individual has heart disease (Yes or No). Special attention is paid to class imbalance in the dataset by using a combination of oversampling and undersampling methods.
 
-## Dataset
+## Content
 
+### Project Jupyter Notebook
+The Project Jupyter Notebook comprehensively details each step taken throughout this project, providing a thorough and systematic overview from the initial stages to the final implementation.
+
+### Streamlit app
+the script of the Streamlit application.
+
+### Dataset
 - **Source**: The dataset consists of 319,795 rows and 18 columns. It includes medical, lifestyle, and demographic information.
 - **Target Variable**: HeartDisease (binary: Yes/No)
 - **Features**:
   - Continuous: BMI, PhysicalHealth, MentalHealth, SleepTime
   - Categorical: Smoking, AlcoholDrinking, Stroke, DiffWalking, Sex, AgeCategory, Race, Diabetic, PhysicalActivity, GenHealth, Asthma, KidneyDisease, SkinCancer
+
+### Requirements File
+The project includes a requirements.txt file, which specifies all necessary packages, including libraries such as pandas, numpy, scikit-learn, xgboost, imblearn, and others for data processing, model training, and deployment.
+
+### Model
+The trained model is stored in a .pkl file for use in the app deployment, ensuring easy and consistent access during deployment.
 
 ## Project Flow
 
@@ -52,6 +65,11 @@ Despite the strong overall performance, the model had a **10% false negative rat
 Key insights from the results:
 - The model performed well on **unseen data**, even after dropping 30% of the majority class (individuals without heart disease), demonstrating that the model's efficiency was not compromised by the data reduction.
 - To further improve accuracy and reliability, **more data collection** from individuals with heart disease is essential, as it will help reduce false negatives.
+
+## Application
+- The app URL: https://heart-disease-test.streamlit.app/
+
+![Heart Disease Test](URL_of_the_image)
 
 ## Key Challenges and Solutions
 
